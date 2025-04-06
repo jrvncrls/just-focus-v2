@@ -1,13 +1,19 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './shared/components/header/header.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'just-focus-v2';
+  isDarkMode = false;
+
+  toggleTheme(): void {
+    this.isDarkMode = !this.isDarkMode;
+    const themeClass = this.isDarkMode ? 'dark-theme' : '';
+    document.documentElement.className = themeClass;
+  }
 }
