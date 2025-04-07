@@ -14,15 +14,15 @@
   --primary-color: hsl(var(--hue), 50%, 90%);
   --pre-primary-color: hsl(var(--hue), 50%, 95%);
   --secondary-color: hsl(var(--hue), 50%, 10%);
-  --tertiary-color: hsl(calc(--hue + 300), 80%, 20%);
-  --accent-color: hsl(calc(--hue + 60), 80%, 20%);
+  --tertiary-color: hsl(calc(200 + 300), 80%, 20%);
+  --accent-color: hsl(calc(200 + 60), 80%, 20%);
 }
 .dark-theme {
   --primary-color: hsl(var(--hue), 50%, 10%);
   --pre-primary-color: hsl(var(--hue), 50%, 15%);
   --secondary-color: hsl(var(--hue), 50%, 90%);
-  --tertiary-color: hsl(calc(--hue + 300), 80%, 80%);
-  --accent-color: hsl(calc(--hue + 60), 80%, 80%);
+  --tertiary-color: hsl(calc(200 + 300), 80%, 80%);
+  --accent-color: hsl(calc(200 + 60), 80%, 80%);
 }
 
 body {

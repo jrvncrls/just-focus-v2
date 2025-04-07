@@ -1,0 +1,23 @@
+:host {
+  .app-container {
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+
+    .nav-container {
+      max-width: 318px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      label {
+        cursor: pointer;
+
+        &.active {
+          font-weight: 700;
+          color: var(--accent-color);
+        }
+      }
+    }
+  }
+}

@@ -3,4 +3,8 @@
   <!-- <button (click)="toggleTheme()">
     Switch to {{ isDarkMode ? "Light" : "Dark" }} Mode
   </button> -->
+  <div class="nav-container">
+    <label [class.active]="isFocus" (click)="toggleTheme()">Focus</label>
+    <label [class.active]="!isFocus" (click)="toggleTheme(false)">Break</label>
+  </div>
 </div>
