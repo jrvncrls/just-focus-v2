@@ -1,0 +1,38 @@
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 6rem;
+    letter-spacing: 0.5rem;
+    pointer-events: none;
+    font-weight: 600;
+    color: var(--tertiary-color);
+  }
+
+  button {
+    font-size: 1.5rem;
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px) scale(1.1); // Moves up and scales up slightly
+    }
+
+    i {
+      font-size: 4rem;
+      color: var(--secondary-color);
+    }
+  }
+}
