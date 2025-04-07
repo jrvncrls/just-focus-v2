@@ -11,5 +11,12 @@ header {
 
   i {
     font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    color: var(--accent-color);
+
+    &:hover {
+      transform: rotate(180deg);
+    }
   }
 }
