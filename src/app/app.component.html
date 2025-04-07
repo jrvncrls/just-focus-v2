@@ -4,10 +4,15 @@
     Switch to {{ isDarkMode ? "Light" : "Dark" }} Mode
   </button> -->
   <div class="nav-container">
-    <label [class.active]="isFocus" (click)="toggleTheme()">Focus</label>
-    <label [class.active]="!isFocus" (click)="toggleTheme(false)">Break</label>
+    <label [class.active]="isFocus()" (click)="toggleTheme()">Focus</label>
+    <label [class.active]="!isFocus()" (click)="toggleTheme(false)"
+      >Break</label
+    >
   </div>
   <div class="timer-container">
-    <app-timer [time]="isFocus ? 25 : 5"></app-timer>
+    <app-timer
+      [time]="time()"
+      (hasFinished)="toggleTheme(!isFocus())"
+    ></app-timer>
   </div>
 </div>
